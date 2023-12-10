@@ -30,7 +30,7 @@ body {
 
 @media (min-width: 25rem) {
     body {
-        padding: 0;
+        padding-inline: 0;
     }
 }
 
@@ -42,7 +42,7 @@ body {
     width: min(100%, 20rem);
     padding: 1rem;
     padding-bottom: 2rem;
-
+    box-shadow: 0 0 20px 0 hsl(0deg 0% 0% / 26%);
     border-radius: 1rem;
 
     text-align: center;
