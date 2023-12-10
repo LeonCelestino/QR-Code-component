@@ -19,19 +19,18 @@ html {
 }
 
 body {
-    display: grid;
-    place-items: center;
-    padding: 0.5rem;
-    min-height: 100svh;
-
     background-color: var(--light-gray);
 
 }
 
-@media (min-width: 25rem) {
-    body {
-        padding-inline: 0;
-    }
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    min-height: 100svh;
+    padding-inline: 0.5rem;
 }
 
 .card {
@@ -39,7 +38,7 @@ body {
     place-items: center;
     gap: 1.8rem;
 
-    width: min(100%, 20rem);
+    width: 20rem;
     padding: 1rem;
     padding-bottom: 2rem;
     box-shadow: 0 0 20px 0 hsl(0deg 0% 0% / 26%);
@@ -78,4 +77,10 @@ body {
 .attribution {
     text-align: center;
     justify-self: center;
+}
+
+@media (min-width: 25rem) {
+    body {
+        padding-inline: 0;
+    }
 }
